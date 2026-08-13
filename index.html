@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Tesseract | FTC 21689 — Nashua, New Hampshire</title>
+<meta name="description" content="FTC Team Tesseract (21689) is a high-achieving FIRST Tech Challenge robotics team from Nashua, New Hampshire — 2025 FIRST World Championship qualifiers, Inspire Award winners, ranked #32 of 8,000 teams worldwide.">
+<meta property="og:title" content="Team Tesseract | FTC 21689">
+<meta property="og:description" content="A high-achieving FIRST Tech Challenge team from Nashua, NH. Designing, building and programming championship robots since 2022.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#05060f">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<noscript><style>.reveal{opacity:1;transform:none}.pre-bar i{width:100%}.cursor-dot,.cursor-ring{display:none}</style></noscript>
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-cube"><svg viewBox="0 0 64 64"><defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs><g fill="none" stroke="url(#pg)" stroke-width="2"><polygon points="32,8 46,17 46,35 32,44 18,35 18,17"/><polygon points="23,14 37,23 37,41 23,50 9,41 9,23" opacity=".45"/><polygon points="41,14 55,23 55,41 41,50 27,41 27,23" opacity=".45"/><line x1="9" y1="23" x2="18" y2="17" opacity=".55"/><line x1="9" y1="41" x2="18" y2="35" opacity=".55"/><line x1="55" y1="23" x2="46" y2="17" opacity=".55"/><line x1="55" y1="41" x2="46" y2="35" opacity=".55"/></g></svg></div>
+    <p class="pre-word">TESSERACT<span>_</span></p>
+    <div class="pre-bar"><i></i></div>
+    <p class="pre-tag">FTC 21689 &middot; NASHUA, NH</p>
+  </div>
+</div>
+
+<div class="noise" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="url(#brandg)" stroke-width="2"><polygon points="20,6 29,11 29,20 20,25 11,20 11,11"/><polygon points="15,9 24,14 24,23 15,28 6,23 6,14" opacity=".4"/><polygon points="25,9 34,14 34,23 25,28 16,23 16,14" opacity=".4"/><line x1="6" y1="14" x2="11" y2="11" opacity=".5"/><line x1="6" y1="23" x2="11" y2="20" opacity=".5"/><line x1="34" y1="14" x2="29" y2="11" opacity=".5"/><line x1="34" y1="23" x2="29" y2="20" opacity=".5"/></g><defs><linearGradient id="brandg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs></svg>
+      <span class="brand-text">TESSERACT<small>FTC 21689</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#team" class="nav-link">Team</a>
+      <a href="#seasons" class="nav-link">Seasons</a>
+      <a href="#robot" class="nav-link">Robot</a>
+      <a href="#outreach" class="nav-link">Outreach</a>
+      <a href="#press" class="nav-link">Press</a>
+      <a href="#sponsors" class="nav-link">Sponsors</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://hcb.hackclub.com/donations/start/ftc-21869-team-tesseract" target="_blank" rel="noopener" class="btn btn-primary btn-sm magnetic"><span>Support Us</span></a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a href="#about" class="m-link">About</a>
+      <a href="#team" class="m-link">Team</a>
+      <a href="#seasons" class="m-link">Seasons</a>
+      <a href="#robot" class="m-link">Robot</a>
+      <a href="#outreach" class="m-link">Outreach</a>
+      <a href="#press" class="m-link">Press</a>
+      <a href="#sponsors" class="m-link">Sponsors</a>
+      <a href="https://hcb.hackclub.com/donations/start/ftc-21869-team-tesseract" target="_blank" rel="noopener" class="btn btn-primary magnetic m-donate">Support Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <canvas id="tesseract-canvas" aria-hidden="true"></canvas>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow reveal">FTC TEAM 21689 &middot; NASHUA, NEW HAMPSHIRE</p>
+    <h1 class="hero-title reveal"><span class="line"><span class="tword">TESS</span></span><span class="line"><span class="tword grad">ERACT</span></span></h1>
+    <p class="hero-sub reveal">We design. We build. We code. We inspire.</p>
+    <div class="hero-badges reveal">
+      <span class="badge"><i class="dot d-cy"></i>World Championship 2025</span>
+      <span class="badge"><i class="dot d-vi"></i>Inspire Award Winner</span>
+      <span class="badge"><i class="dot d-pi"></i>#32 of 8,000 Teams</span>
+    </div>
+    <div class="hero-cta reveal">
+      <a href="#team" class="btn btn-primary magnetic"><span>Meet the Team</span></a>
+      <a href="#seasons" class="btn btn-ghost magnetic"><span>Our Seasons</span></a>
+    </div>
+  </div>
+
+  <div class="hero-meta reveal">
+    <div class="hero-stat"><span class="hs-num">2025</span><span class="hs-lbl">FIRST Worlds<br>Qualifiers</span></div>
+    <div class="hero-stat"><span class="hs-num">4</span><span class="hs-lbl">Competitive<br>Seasons</span></div>
+    <div class="hero-stat"><span class="hs-num">202K</span><span class="hs-lbl">People<br>Inspired</span></div>
+  </div>
+
+  <a href="#stats" class="scroll-cue" aria-label="Scroll to content"><span class="cue-line"></span><span class="cue-text">SCROLL</span></a>
+</section>
+
+<div class="hero-ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="tk">WORLD CHAMPIONSHIP QUALIFIERS &nbsp;&bull;&nbsp; </span>
+    <span class="tk">INSPIRE AWARD WINNERS &nbsp;&bull;&nbsp; </span>
+    <span class="tk">TOP 32 GLOBAL SCORING TEAM &nbsp;&bull;&nbsp; </span>
+    <span class="tk">953 OUTREACH HOURS &nbsp;&bull;&nbsp; </span>
+    <span class="tk">202,000 PEOPLE REACHED &nbsp;&bull;&nbsp; </span>
+    <span class="tk">12 TEAMS MENTORED &nbsp;&bull;&nbsp; </span>
+    <span class="tk">FOUNDED 2022 &nbsp;&bull;&nbsp; </span>
+    <span class="tk">NASHUA, NEW HAMPSHIRE &nbsp;&bull;&nbsp; </span>
+    <span class="tk">GRACIOUS PROFESSIONALISM &nbsp;&bull;&nbsp; </span>
+  </div>
+</div>
+
+<section id="stats" class="stats">
+  <div class="container stats-grid">
+    <div class="stat-card reveal"><span class="stat-num" data-count="953">0</span><span class="stat-lbl">Outreach Hours</span><span class="stat-src">2024–25 season</span></div>
+    <div class="stat-card reveal"><span class="stat-num"><span class="pre-k">202</span>K</span><span class="stat-lbl">People Reached</span><span class="stat-src">through STEM outreach</span></div>
+    <div class="stat-card reveal"><span class="stat-num">#<span data-count="32">0</span></span><span class="stat-lbl">Global Scoring Rank</span><span class="stat-src">of 8,000+ teams</span></div>
+    <div class="stat-card reveal"><span class="stat-num" data-count="23">0</span><span class="stat-lbl">Official Events</span><span class="stat-src">since 2022</span></div>
+    <div class="stat-card reveal"><span class="stat-num" data-count="12">0</span><span class="stat-lbl">Teams Mentored</span><span class="stat-src">FLL + FTC pipeline</span></div>
+    <div class="stat-card reveal"><span class="stat-num" data-count="9">0</span><span class="stat-lbl">Student Members</span><span class="stat-src">9 student-led roles</span></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">01 &middot; WHO WE ARE</p>
+      <h2 class="section-title">More than a robot.<br>We're <em>engineers of inspiration.</em></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="lead">Team Tesseract is a high-achieving <strong>FIRST Tech Challenge</strong> team of nine students from Nashua, New Hampshire — designing, building and programming championship-caliber robots since 2022.</p>
+        <p>We qualified for the <strong>FIRST World Championship in Houston</strong>, claimed the <strong>Inspire Award</strong> for our 953 hours of outreach, and were ranked <strong>#32 out of 8,000+ teams worldwide</strong> for scoring ability. But our mission goes beyond competition.</p>
+        <p>We exist to advance STEM education, mentor the next generation of engineers, and prove that a group of students with a shop full of metal and a vision can change a community.</p>
+        <div class="about-quote">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6.5A2.5 2.5 0 0 1 9 7.5V7h1zm11 0h-4a3 3 0 0 0-3 3v7h7v-7h-3.5a2.5 2.5 0 0 1 2.5-2.5V7h1z"/></svg>
+          <p>“FIRST lets us blend the thrill of competitive sports with the rigors of STEM education.”</p>
+          <span>— Jason Bottino, Team Captain</span>
+        </div>
+      </div>
+      <div class="about-photo reveal">
+        <figure class="photo-frame">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FTCTeamPic-2.png-c46pwhPVOSxUrs3v1IdlnasI3V3jKS.jpeg" alt="Team Tesseract group photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <figcaption class="photo-fallback">TEAM TESSERACT<br><small>FTC 21689 &middot; Est. 2022</small></figcaption>
+        </figure>
+        <div class="photo-badge"><span class="badge-num">9</span><span class="badge-txt">students<br>one mission</span></div>
+      </div>
+    </div>
+    <div class="values">
+      <div class="value-card reveal"><span class="value-icon">◆</span><h3>Innovation</h3><p>Custom mechanisms, 3D-printed parts and first-of-their-kind vision systems on every bot.</p></div>
+      <div class="value-card reveal"><span class="value-icon">⬡</span><h3>Teamwork</h3><p>Every member drives real decisions — nine students, nine roles, one machine.</p></div>
+      <div class="value-card reveal"><span class="value-icon">✦</span><h3>Excellence</h3><p>Ranked among the top scorers on Earth. We don't just compete — we overbuild.</p></div>
+      <div class="value-card reveal"><span class="value-icon">❖</span><h3>Community</h3><p>Gracious professionalism: 953 outreach hours and 202,000 people inspired.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">02 &middot; THE CREW</p>
+      <h2 class="section-title">Nine minds.<br>One <em>machine.</em></h2>
+      <p class="section-sub">Student-led, student-built. Every role on this team was earned in the shop, at the drive station and in the code.</p>
+    </div>
+    <div class="team-grid" id="teamGrid">
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:180deg"><span>JB</span></div><span class="role-tag">CAPTAIN</span></div>
+        <h3>Jason Bottino</h3>
+        <p class="role">Team Captain</p>
+        <p class="bio">Programmer and Drive Coach who developed Hyper Pathing. Led the team to Worlds.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:210deg"><span>AN</span></div><span class="role-tag">HARDWARE</span></div>
+        <h3>Anirudh Pulugurtha</h3>
+        <p class="role">Hardware Lead</p>
+        <p class="bio">Builder who designed and assembled the horizontal and vertical slide systems.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:240deg"><span>AD</span></div><span class="role-tag">SOFTWARE</span></div>
+        <h3>Addy Veerendra</h3>
+        <p class="role">Software Lead</p>
+        <p class="bio">Programmer who developed sample detection and AprilTag vision pipelines.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:270deg"><span>PC</span></div><span class="role-tag">DRIVE</span></div>
+        <h3>Pace Khadaroo</h3>
+        <p class="role">Drive Captain</p>
+        <p class="bio">Builder and driver who designed the full robot CAD from scratch.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:300deg"><span>YU</span></div><span class="role-tag">STRATEGY</span></div>
+        <h3>Yuvan Balagurumoorthy</h3>
+        <p class="role">Strategy Lead</p>
+        <p class="bio">Builder and programmer behind the computer vision and autonomous programs.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:330deg"><span>JI</span></div><span class="role-tag">OUTREACH</span></div>
+        <h3>Jinen Gandhi</h3>
+        <p class="role">Outreach Lead</p>
+        <p class="bio">Organized workshops and assembled the claw. The team's voice in the community.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:20deg"><span>AM</span></div><span class="role-tag">BUSINESS</span></div>
+        <h3>Ameya Kharade</h3>
+        <p class="role">Business Lead</p>
+        <p class="bio">Created the team's YouTube, Instagram and this website. Driver and outreach lead.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:50deg"><span>DI</span></div><span class="role-tag">STRATEGY</span></div>
+        <h3>Divyesh Gaddam</h3>
+        <p class="role">Strategist</p>
+        <p class="bio">Strategist and builder who planned the autonomous programs for match play.</p>
+      </article>
+
+      <article class="member reveal" data-tilt>
+        <div class="member-top"><div class="avatar" style="--a:80deg"><span>SA</span></div><span class="role-tag">BUILD</span></div>
+        <h3>Samarth Sharma</h3>
+        <p class="role">Builder &amp; Human Player</p>
+        <p class="bio">Assembled the drivetrain and plays human player at the scoring station.</p>
+      </article>
+
+    </div>
+
+    <div class="mentors">
+      <div class="mentor-card reveal" data-tilt>
+        <div class="mentor-img">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Srini-zmbAd1ljZ2sOMV2kncmuh9oXodovpP.png" alt="Srinivasa Pulugurtha" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="photo-fallback">SRINI</span>
+        </div>
+        <div class="mentor-info">
+          <span class="eyebrow">COACH</span>
+          <h3>Srinivasa Pulugurtha</h3>
+          <p>Guides the team in project management and decision-making. An AI developer at Fannie Mae, he teaches the students how to train real AI models.</p>
+        </div>
+      </div>
+      <div class="mentor-card reveal" data-tilt>
+        <div class="mentor-img">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Marsha-1YUnIVZnM5ziphpuj1KVHqBoOEIHYj.png" alt="Marsha Bottino" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="photo-fallback">MARSH</span>
+        </div>
+        <div class="mentor-info">
+          <span class="eyebrow">BUSINESS MENTOR</span>
+          <h3>Marsha Bottino</h3>
+          <p>Helped establish the team's 501(c)(3) status and guided advocacy — including the proclamation making April FIRST Robotics Awareness Month in NH.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seasons" class="seasons">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">03 &middot; THE RÉSUMÉ</p>
+      <h2 class="section-title">Every season,<br>a new <em>frontier.</em></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="--c:22d3ee"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-year">2022</span><span class="tl-game">POWERPLAY</span></div>
+          <h3>Rookie Season</h3>
+          <p>Team Tesseract is founded with nine students and a mission to inspire STEM education in Nashua and beyond.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="--c:8b5cf6"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-year">2023</span><span class="tl-game">CENTERSTAGE</span></div>
+          <h3>Regional Excellence</h3>
+          <ul class="tl-awards">
+            <li>Inspire Award 2nd &mdash; NH Windham Qualifier</li>
+            <li>Control + Innovate Awards &mdash; Derryfield Qualifier</li>
+            <li>New England Invitational: Inspire 3rd, Motivate Award</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="--c:f472b6"></div>
+        <div class="tl-card tl-hero">
+          <div class="tl-top"><span class="tl-year">2024–25</span><span class="tl-game">INTO THE DEEP</span></div>
+          <h3>NH Champions → World Stage</h3>
+          <ul class="tl-awards">
+            <li>Inspire Award — Merrimack Qualifier</li>
+            <li>NH Championship: Inspire 2nd + Winning Alliance</li>
+            <li>Three highest-scoring matches in New England</li>
+            <li>Qualified for the FIRST World Championship — Houston</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="--c:38bdf8"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-year">2025</span><span class="tl-game">DECODE</span></div>
+          <h3>The Momentum Builds</h3>
+          <ul class="tl-awards">
+            <li>Inspire Award + Winning Alliance Captain — Bedford</li>
+            <li>Inspire 2nd + Winning Alliance Captain — Kittery</li>
+            <li>FIRST Leadership Award Finalists — NH Championship</li>
+            <li>Inspire 3rd — New England Premier Event</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="--c:34d399"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-year">2025–26</span><span class="tl-game">CURRENT</span></div>
+          <h3>The Next Dimension</h3>
+          <p>Back on the field with a new robot, new code and the same goal: push further than any Tesseract before.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="robot" class="robot">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">04 &middot; THE MACHINE</p>
+      <h2 class="section-title">Meet the <em>Into the Deep</em><br>competition robot.</h2>
+    </div>
+    <div class="robot-grid">
+      <div class="gallery reveal" id="gallery">
+        <figure class="g-main" id="gMain">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Robot1-0wsinJ4gNw8yjtJcd1lmKgoGw2CxHs.png" alt="Competition robot view one" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="photo-fallback">ROBOT<br><small>INTO THE DEEP</small></span>
+        </figure>
+        <div class="g-thumbs">
+          <button class="g-thumb is-active" data-src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Robot1-0wsinJ4gNw8yjtJcd1lmKgoGw2CxHs.png"><span></span></button>
+          <button class="g-thumb" data-src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Robot2-N2UAr8aAmt9jDtt08uHjb6nvrdyacm.png"><span></span></button>
+          <button class="g-thumb" data-src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Robot-ZzoFuNbKiDPaDsr2E8lZOlmFaHPHhU.png"><span></span></button>
+          <button class="g-thumb" data-src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPWRobotjpg.jpg-GxK4I9oyzwkDcs491i6NakgfthH05d.jpeg"><span></span></button>
+        </div>
+      </div>
+      <div class="robot-info">
+        <div class="robot-feat reveal">
+          <span class="rf-icon">◆</span>
+          <h3>Robot Design</h3>
+          <p>Custom intake, precise scoring mechanism, and 3D-printed parts machined in-house. Horizontal and vertical slides engineered for speed.</p>
+        </div>
+        <div class="robot-feat reveal">
+          <span class="rf-icon">⬡</span>
+          <h3>Autonomous</h3>
+          <p>Advanced routines powered by computer vision and AprilTag detection navigate the field with repeatable precision every single match.</p>
+        </div>
+        <div class="robot-feat reveal">
+          <span class="rf-icon">✦</span>
+          <h3>Competition Results</h3>
+          <p>Inspire Award, winning alliances, and three of the highest-scoring matches in New England — enough to earn a ticket to Houston.</p>
+        </div>
+        <a href="https://www.firstinspires.org/robotics/ftc/game-and-season" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><span>About the Game</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="outreach" class="outreach">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">05 &middot; GIVING BACK</p>
+      <h2 class="section-title">Outreach isn't a side quest.<br>It's <em>the mission.</em></h2>
+    </div>
+
+    <div class="out-grid">
+      <div class="out-photos reveal">
+        <figure class="op op-1"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2425OR1-fHFnnUxL7LK0yt0j0sT0HWxm46uZR2.png" alt="Outreach: programming workshop" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="photo-fallback">COMMUNITY</span></figure>
+        <figure class="op op-2"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2425OR2-FRNBvdpvl7wPiLBLE9GRW6E0J2uBya.png" alt="Outreach: CAD and 3D printing workshop" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="photo-fallback">STEM WORKSHOPS</span></figure>
+        <figure class="op op-3"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2425OR3-kpQvGhndUxy2cK6lC239EZ84Q2MlBg.png" alt="Outreach: science fair" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="photo-fallback">SCIENCE FAIR</span></figure>
+      </div>
+
+      <div class="out-copy">
+        <div class="out-card reveal">
+          <h3>⌨ Free Java Programming Classes</h3>
+          <p>PID loops, the IMU and computer vision — taught free to middle and high school students.</p>
+        </div>
+        <div class="out-card reveal">
+          <h3>⚙ CAD &amp; 3D Printing Workshop</h3>
+          <p>A hands-on workshop at our local library in partnership with IIT AGNE.</p>
+        </div>
+        <div class="out-card reveal">
+          <h3>🔬 Community Science Fair</h3>
+          <p>Hosted a local elementary science fair with 250+ participants and families.</p>
+        </div>
+        <div class="out-card reveal">
+          <h3>🧭 Mentorship Pipeline</h3>
+          <p>5 FLL teams and 7 FTC teams mentored — building the next generation of builders.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="out-strip reveal">
+      <div class="os-item"><span>710</span><p>new students recruited<br>into STEM</p></div>
+      <div class="os-item"><span>250+</span><p>science fair<br>participants</p></div>
+      <div class="os-item"><span>2</span><p>governments engaged —<br>FIRST Month in NH</p></div>
+      <div class="os-item"><span>∞</span><p>curiosity<br>unlocked</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="press" class="press">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">06 &middot; IN THE NEWS</p>
+      <h2 class="section-title">The world is <em>watching.</em></h2>
+    </div>
+    <div class="press-grid">
+      <a class="press-card reveal" href="https://www.nashuatelegraph.com/news/2025/03/03/nashua-robotics-team-to-battle-for-world-championship/" target="_blank" rel="noopener">
+        <span class="pc-tag">NEWS &middot; MAR 2025</span>
+        <h3>“Nashua robotics team to battle for world championship”</h3>
+        <p>The Nashua Telegraph profiles our journey to Houston — ranked 32nd of 8,000 teams worldwide.</p>
+        <span class="pc-link">Nashua Telegraph →</span>
+      </a>
+      <a class="press-card reveal" href="https://www.unionleader.com/eedition/page-a1/page_fd718c5b-4883-5988-9bf1-3a1288bed415.html" target="_blank" rel="noopener">
+        <span class="pc-tag">NEWS &middot; FEB 2025</span>
+        <h3>“FIRST competition stokes STEM excitement”</h3>
+        <p>The Union Leader covers our state-championship run and the passion behind the build.</p>
+        <span class="pc-link">Union Leader →</span>
+      </a>
+      <a class="press-card reveal" href="https://www.youtube.com/@ftc21689" target="_blank" rel="noopener">
+        <span class="pc-tag">PROCLAMATION &middot; APR 2025</span>
+        <h3>April = FIRST Robotics Awareness Month</h3>
+        <p>Governor Kelly Ayotte proclaimed April 2025 FIRST Robotics Awareness Month in New Hampshire.</p>
+        <span class="pc-link">Our Story →</span>
+      </a>
+      <a class="press-card reveal" href="https://www.youtube.com/@ftc21689" target="_blank" rel="noopener">
+        <span class="pc-tag">CONTENT &middot; TESSERACT TALKS</span>
+        <h3>Tesseract Talks: interviews with top FTC teams</h3>
+        <p>Our interview series with elite teams from around the globe — on our YouTube channel.</p>
+        <span class="pc-link">Watch on YouTube →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="sponsors" class="sponsors">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">07 &middot; ALLIES</p>
+      <h2 class="section-title">Powered by people who<br>believe in <em>STEM.</em></h2>
+    </div>
+    <div class="sponsor-row reveal">
+      <a class="sponsor-card" href="#" onclick="return false"><span class="sp-logo">CAMPOS<br>FABRICATION</span><span class="sp-sub">Fabrication Partner</span></a>
+      <a class="sponsor-card" href="#" onclick="return false"><span class="sp-logo">GLANCE</span><span class="sp-sub">Technology Partner</span></a>
+      <a class="sponsor-card" href="https://www.firstinspires.org/" target="_blank" rel="noopener"><span class="sp-logo">FIRST</span><span class="sp-sub">Tech Challenge</span></a>
+    </div>
+    <div class="sponsor-cta reveal">
+      <p>Want your name on our robot? Sponsorships fund parts, travel and competition fees.</p>
+      <a href="mailto:ftctesseract@gmail.com?subject=Sponsorship%20Inquiry" class="btn btn-primary magnetic"><span>Become a Sponsor</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="donate" class="donate">
+  <div class="container">
+    <div class="donate-panel reveal">
+      <div class="dp-glow" aria-hidden="true"></div>
+      <p class="eyebrow">SUPPORT THE JOURNEY</p>
+      <h2>Help us get to <em>Worlds.</em></h2>
+      <p class="dp-copy">Your donation covers robot parts, travel and competition fees — and fuels 200,000+ people reached through STEM outreach.</p>
+      <div class="dp-btns">
+        <a href="https://hcb.hackclub.com/donations/start/ftc-21869-team-tesseract" target="_blank" rel="noopener" class="btn btn-primary btn-lg magnetic"><span>Donate via HCB</span></a>
+        <a href="https://gofund.me/80622067" target="_blank" rel="noopener" class="btn btn-ghost btn-lg magnetic"><span>GoFundMe</span></a>
+      </div>
+      <p class="dp-note">501(c)(3) · Every dollar goes to the build</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="url(#brandg2)" stroke-width="2"><polygon points="20,6 29,11 29,20 20,25 11,20 11,11"/><polygon points="15,9 24,14 24,23 15,28 6,23 6,14" opacity=".4"/><polygon points="25,9 34,14 34,23 25,28 16,23 16,14" opacity=".4"/><line x1="6" y1="14" x2="11" y2="11" opacity=".5"/><line x1="6" y1="23" x2="11" y2="20" opacity=".5"/><line x1="34" y1="14" x2="29" y2="11" opacity=".5"/><line x1="34" y1="23" x2="29" y2="20" opacity=".5"/></g><defs><linearGradient id="brandg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs></svg>
+      <p>FTC Team 21689 from New Hampshire, pushing the boundaries of robotics and STEM education.</p>
+      <div class="f-social">
+        <a href="https://www.youtube.com/@ftc21689" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+        <a href="https://www.instagram.com/tesseract.ftc/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/profile.php?id=61573701281991" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="mailto:ftctesseract@gmail.com" aria-label="Email">@</a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a>
+      <a href="#team">Meet the Team</a>
+      <a href="#seasons">Current Season</a>
+      <a href="#outreach">Outreach</a>
+      <a href="#press">Media</a>
+    </div>
+    <div class="f-col">
+      <h4>Connect</h4>
+      <a href="https://www.youtube.com/@ftc21689" target="_blank" rel="noopener">YouTube Channel</a>
+      <a href="https://www.instagram.com/tesseract.ftc/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61573701281991" target="_blank" rel="noopener">Facebook</a>
+      <a href="mailto:ftctesseract@gmail.com">ftctesseract@gmail.com</a>
+    </div>
+    <div class="f-col f-donate">
+      <h4>Support Us</h4>
+      <p>Help us continue our journey in robotics and STEM education.</p>
+      <a href="https://hcb.hackclub.com/donations/start/ftc-21869-team-tesseract" target="_blank" rel="noopener" class="btn btn-primary magnetic"><span>Donate Now</span></a>
+    </div>
+  </div>
+  <div class="container f-bottom">
+    <p>© <span id="year">2025</span> Team Tesseract | FTC 21689. All rights reserved.</p>
+    <p class="f-mono">NASHUA, NH &middot; FOR INSPIRATION &amp; RECOGNITION OF SCIENCE &amp; TECHNOLOGY</p>
+  </div>
+</footer>
+
+<a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
