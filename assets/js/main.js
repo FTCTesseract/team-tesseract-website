@@ -126,8 +126,8 @@
     const scale = Math.min(W, H) * 0.15;
 
     const bodies = [
-      { verts, edges, col: [34, 211, 238], lw: 1.1, dim: 0.9 },
-      { verts: shellVerts, edges: shellEdges, col: [139, 92, 246], lw: 1.6, dim: 0.95 }
+      { verts, edges, col: [255, 255, 255], lw: 2.0, dim: 1.0 },
+      { verts: shellVerts, edges: shellEdges, col: [200, 180, 255], lw: 2.5, dim: 1.0 }
     ];
 
     bodies.forEach((b) => {
