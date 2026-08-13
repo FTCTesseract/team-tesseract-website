@@ -182,6 +182,8 @@
   const gMainImg = document.querySelector("#gMain img");
   const gThumbs = document.querySelectorAll(".g-thumb");
   gThumbs.forEach((t) => {
+    const preview = t.querySelector("span");
+    if (preview) preview.style.backgroundImage = 'url("' + t.dataset.src + '")';
     t.addEventListener("click", () => {
       gThumbs.forEach((x) => x.classList.remove("is-active"));
       t.classList.add("is-active");
