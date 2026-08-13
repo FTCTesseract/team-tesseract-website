@@ -123,7 +123,7 @@
     rot.yw = t * 0.11;
 
     const cx = W / 2, cy = H / 2;
-    const scale = Math.min(W, H) * 0.19;
+    const scale = Math.min(W, H) * 0.15;
 
     const bodies = [
       { verts, edges, col: [34, 211, 238], lw: 1.1, dim: 0.9 },
