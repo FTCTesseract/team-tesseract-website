@@ -66,21 +66,30 @@ ul{list-style:none}
 
 /* ---------- preloader ---------- */
 #preloader{
-  position:fixed;inset:0;z-index:2000;background:var(--bg);display:flex;align-items:center;justify-content:center;
+  position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;
+  z-index:2000;background:var(--bg);
   transition:opacity .7s var(--ease),visibility .7s;
 }
 #preloader.done{opacity:0;visibility:hidden}
-.pre-inner{text-align:center}
-.pre-cube img{width:96px;height:96px;object-fit:contain;display:block;animation:prepulse 2.2s var(--ease) infinite}
-.pre-cube{filter:drop-shadow(0 0 18px rgba(34,80,255,.55))}
+.pre-inner{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  width:max-content;max-width:90vw;
+}
+.pre-cube{
+  width:96px;height:96px;flex:none;margin:0;
+  background:url("../img/tesseract.png") center / contain no-repeat;
+  filter:drop-shadow(0 0 18px rgba(34,80,255,.55));
+  animation:prepulse 2.2s var(--ease) infinite;
+}
 @keyframes prepulse{0%,100%{transform:scale(1);opacity:.92}50%{transform:scale(1.06);opacity:1}}
-.pre-word{font-family:var(--font-display);font-weight:800;letter-spacing:.34em;font-size:1.05rem;margin-top:18px}
+.pre-word{font-family:var(--font-display);font-weight:800;letter-spacing:.34em;font-size:1.05rem;margin:18px 0 0;padding-left:.34em;width:100%;text-align:center}
 .pre-word span{color:var(--txt);animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
-.pre-bar{width:220px;height:2px;background:var(--line);margin:18px auto 0;border-radius:2px;overflow:hidden}
+.pre-bar{width:220px;height:2px;background:var(--line);margin:18px 0 0;border-radius:2px;overflow:hidden;flex:none}
 .pre-bar i{display:block;height:100%;width:0;background:var(--grad);animation:loadbar 1.6s var(--ease) forwards}
 @keyframes loadbar{to{width:100%}}
-.pre-tag{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.3em;color:rgba(255,255,255,.6);margin-top:14px}
+.pre-tag{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.3em;padding-left:.3em;color:rgba(255,255,255,.6);margin-top:14px;width:100%;text-align:center}
 
 /* ---------- buttons ---------- */
 .btn{
