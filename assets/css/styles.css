@@ -190,7 +190,8 @@ ul{list-style:none}
 .d-cy,.d-primary{background:var(--primary);color:var(--primary)}.d-vi,.d-violet{background:var(--violet);color:var(--violet)}.d-pi{background:var(--em);color:var(--em)}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .hero-meta{
-  position:absolute;z-index:5;left:50%;bottom:86px;transform:translateX(-50%);
+  position:absolute;z-index:5;left:0;right:0;bottom:86px;
+  width:max-content;max-width:calc(100% - 48px);margin-inline:auto;
   display:flex;gap:clamp(20px,5vw,72px);
   justify-content:center;
 }
@@ -521,7 +522,7 @@ section{position:relative}
   .nav-cta .btn-primary{display:none}
   .burger{display:flex}
   .hero-title{font-size:clamp(2rem,8.5vw,4rem);letter-spacing:0}
-  .hero-meta{position:static;transform:none;margin-top:48px;flex-direction:row}
+  .hero-meta{position:static;left:auto;right:auto;width:100%;max-width:none;margin:48px auto 0;flex-direction:row;justify-content:center}
   .scroll-cue{display:none}
   .stats-grid{grid-template-columns:repeat(2,1fr)}
   .team-grid{grid-template-columns:1fr}
