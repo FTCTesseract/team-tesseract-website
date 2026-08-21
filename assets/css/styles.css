@@ -182,13 +182,14 @@ ul{list-style:none}
 .hero-title{
   font-family:var(--font-display);font-weight:800;font-size:clamp(3.4rem,9.5vw,8rem);
    line-height:.86;letter-spacing:.04em;text-transform:uppercase;margin:26px 0 22px;
-  perspective:900px;display:flex;justify-content:center;
+  perspective:900px;display:flex;flex-direction:column;align-items:center;justify-content:center;
 }
 .grad{
   background:var(--grad);
   -webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 0 32px rgba(139,92,246,.4));
 }
+.t-pre{font-size:.3em;letter-spacing:.6em;padding-left:.6em;margin-bottom:.18em}
 .hero-sub{font-family:var(--font-display);font-weight:600;font-size:clamp(1rem,2.6vw,1.4rem);letter-spacing:.08em;color:var(--txt)}
 .hero-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:30px 0 36px}
 .badge{
