@@ -228,29 +228,29 @@ ul{list-style:none}
 
 /* ---------- top sponsor logo marquee ---------- */
 .logo-marquee{
-  position:relative;z-index:6;background:#f4f6fb;color:#0b0e1a;
-  border-block:1px solid rgba(10,15,30,.1);
-  overflow:hidden;padding:18px 0 16px;
+  position:relative;z-index:6;background:#07080d;
+  border-block:1px solid rgba(255,255,255,.08);
+  overflow:hidden;padding:26px 0;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
 }
-.logo-marquee-label{
-  text-align:center;font-family:var(--font-mono);font-size:.6rem;font-weight:600;
-  letter-spacing:.34em;text-transform:uppercase;color:#5b6478;margin-bottom:14px;padding-left:.34em;
-}
 .logo-track{
-  display:flex;align-items:center;gap:clamp(30px,5vw,68px);
-  width:max-content;padding-inline:34px;
+  display:flex;align-items:center;gap:clamp(48px,7vw,110px);
+  width:max-content;padding-inline:54px;
   animation:sponsorScroll 30s linear infinite;
 }
 .logo-marquee:hover .logo-track{animation-play-state:paused}
-.logo-item{flex:none;display:flex;align-items:center}
-.logo-item img{height:38px;width:auto;max-width:200px;object-fit:contain;display:block;transition:transform .3s var(--ease)}
-.logo-item:hover img{transform:scale(1.07)}
-.logo-item.dark-chip img{background:#0c0e16;border-radius:12px;padding:8px 16px;height:54px;max-width:230px}
+.logo-item{flex:none;display:flex;align-items:center;opacity:.62;transition:opacity .3s}
+.logo-item:hover{opacity:1}
+.logo-item img{
+  height:42px;width:auto;max-width:220px;object-fit:contain;display:block;
+  filter:brightness(0) invert(1);
+  transition:transform .3s var(--ease);
+}
+.logo-item:hover img{transform:scale(1.05)}
 .logo-word{
-  font-family:var(--font-display);font-weight:800;font-size:1rem;letter-spacing:.08em;
-  color:#141828;white-space:nowrap;
+  font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:.1em;
+  color:#fff;white-space:nowrap;
 }
 
 /* ---------- ticker ---------- */
@@ -605,11 +605,10 @@ section{position:relative}
   .scroll-cue{display:none}
   .hero-ticker{padding:10px 0}
   .tk{font-size:.6rem;letter-spacing:.18em}
-  .logo-marquee{padding:14px 0 12px}
-  .logo-marquee-label{font-size:.54rem;margin-bottom:10px}
-  .logo-item img{height:30px;max-width:150px}
-  .logo-item.dark-chip img{height:44px;padding:6px 12px}
-  .logo-word{font-size:.85rem}
+  .logo-marquee{padding:20px 0}
+  .logo-track{gap:40px;padding-inline:20px}
+  .logo-item img{height:32px;max-width:160px}
+  .logo-word{font-size:.9rem}
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .stat-card{min-height:150px;padding:24px 14px}
   .team-grid{grid-template-columns:1fr}
