@@ -226,32 +226,8 @@ ul{list-style:none}
 @keyframes cue{to{top:100%}}
 .cue-text{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.3em;color:var(--dim);writing-mode:vertical-rl}
 
-/* ---------- top sponsor logo marquee ---------- */
-.logo-marquee{
-  position:relative;z-index:6;background:#07080d;
-  border-block:1px solid rgba(255,255,255,.08);
-  overflow:hidden;padding:26px 0;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
-}
-.logo-track{
-  display:flex;align-items:center;gap:clamp(48px,7vw,110px);
-  width:max-content;padding-inline:54px;
-  animation:sponsorScroll 30s linear infinite;
-}
-.logo-marquee:hover .logo-track{animation-play-state:paused}
-.logo-item{flex:none;display:flex;align-items:center;opacity:.62;transition:opacity .3s}
-.logo-item:hover{opacity:1}
-.logo-item img{
-  height:42px;width:auto;max-width:220px;object-fit:contain;display:block;
-  filter:brightness(0) invert(1);
-  transition:transform .3s var(--ease);
-}
-.logo-item:hover img{transform:scale(1.05)}
-.logo-word{
-  font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:.1em;
-  color:#fff;white-space:nowrap;
-}
+/* ---------- sponsor marquee (top + bottom share the same look) ---------- */
+.sponsor-marquee-top{padding:26px 0;border-block:1px solid var(--line)}
 
 /* ---------- ticker ---------- */
 .hero-ticker{
@@ -605,10 +581,6 @@ section{position:relative}
   .scroll-cue{display:none}
   .hero-ticker{padding:10px 0}
   .tk{font-size:.6rem;letter-spacing:.18em}
-  .logo-marquee{padding:20px 0}
-  .logo-track{gap:40px;padding-inline:20px}
-  .logo-item img{height:32px;max-width:160px}
-  .logo-word{font-size:.9rem}
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .stat-card{min-height:150px;padding:24px 14px}
   .team-grid{grid-template-columns:1fr}
@@ -676,6 +648,6 @@ img,video{max-width:100%;height:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
-  .ticker-track,.sponsor-track,.logo-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
-  .sponsor-marquee,.logo-marquee{-webkit-mask-image:none;mask-image:none}
+  .ticker-track,.sponsor-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
+  .sponsor-marquee{-webkit-mask-image:none;mask-image:none}
 }
